@@ -1,0 +1,13 @@
+Package: robustHT
+Type: Package
+Title: Estimates the Conditional Bias of the Horvitz-Thompson Estimator and Computes the Robust Horvitz-Thompson Estimator (Beaumont, Haziza and Ruiz-Gazen, 2013).
+Version: 0.1.0
+Date: 2018-07-13
+Authors@R: person("Roberto", "Sichera", email = "roberto.sichera@unipa.it", role=c("aut", "cre"))
+Description: Robust estimation for the Horvitz-Thompson total estimator is provided. 
+Depends: R (>= 3.4.0)
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+BugReports: https://github.com/rhobis/robustHT/issues
+RoxygenNote: 6.1.0
