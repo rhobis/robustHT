@@ -9,6 +9,8 @@
 #'
 #' @return a scalar, representing the value c that minimizes the maximum Bias
 #'     of the robust HT estimator over a grid of values.
+#'
+#' @export
 
 
 find_cmin_iter <- function(cBias, niter=1000){

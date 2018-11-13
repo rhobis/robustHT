@@ -17,6 +17,7 @@
 #'
 #' @return The Robust Horvitz-Thompson estimate
 #'
+#' @export
 
 RHTestimate <- function(ys, pks, cBias, cmin, Delta_cmin){
 
