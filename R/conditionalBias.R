@@ -14,6 +14,8 @@
 #' random sampling (\code{"srs"}) or for Poisson sampling (\code{"poisson"}).
 #'
 #' @return a numeric vector of conditional bias
+#'
+#' @export
 
 
 

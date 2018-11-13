@@ -17,6 +17,7 @@
 #'
 #' @return The Robust Horvitz-Thompson estimate
 #'
+#' @export
 
 RHTestimate <- function(ys, pks, cBias, cmin, Delta_cmin){
 
@@ -50,6 +51,7 @@ RHTestimate <- function(ys, pks, cBias, cmin, Delta_cmin){
 #'
 #' @return a scalar, representing the Delta value corresponding to the minimum c
 #'
+#' @export
 
 Delta_cmin <- function(cBias){
     rangeB <- range(cBias)
