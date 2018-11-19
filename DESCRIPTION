@@ -1,6 +1,6 @@
 Package: robustHT
 Type: Package
-Title: Estimates the Conditional Bias of the Horvitz-Thompson Estimator and Computes the Robust Horvitz-Thompson Estimator (Beaumont, Haziza and Ruiz-Gazen, 2013).
+Title: Estimates the Conditional Bias of the Horvitz-Thompson Estimator and Computes the Robust Horvitz-Thompson Estimator (Beaumont, Haziza and Ruiz-Gazen, 2013)<10.1093/biomet/ast010>
 Version: 0.1.0
 Date: 2018-07-13
 Authors@R: person("Roberto", "Sichera", email = "roberto.sichera@unipa.it", role=c("aut", "cre"))

@@ -1,32 +1,43 @@
 ### ----------------------------------------------------------------------------
 
-#' Find the minimum c value iteratively
+#' Find the minimum c value over a grid of values
 #'
 #' Compute the value c that minimizes the maximum absolute conditional Bias of
 #' the robust HT estimator over a grid of values.
 #'
 #' @param cBias vector of conditional bias for a sample
+#' @param ngrid integer scalar indicating the length of the grid of values that
+#'         is generated to estimate the optimum value for c
 #'
-#' @return a scalar, representing the value c that minimizes the maximum Bias
+#' @return A scalar, representing the value c that minimizes the maximum Bias
 #'     of the robust HT estimator over a grid of values.
 #'
 #' @export
+#'
 
 
-find_cmin_iter <- function(cBias, niter=1000){
+find_cmin <- function(cBias, ngrid=4*length(cBias)){
 
-    if(length(cBias)<1) return( NULL )
+    if(!is.numeric(cBias) | !is.vector(cBias) | is.list(cBias) )
+        stop("Argument cBias must be a vector!")
+    if(length(cBias)<2) stop("Argument cBias must have length >2")
+
+
+    if( is.array(ngrid) | is.list(ngrid) | is.data.frame(ngrid) | !is.numeric(ngrid) )
+        stop("Argument ngrid must be numeric scalar!")
+    if( length(ngrid)>1) ngrid <- ngrid[1]
+    ngrid <- ceiling(ngrid)
 
     acb    <- abs(cBias)
     rb     <- range(acb)
-    cval   <- seq(rb[1],rb[2], length=niter)
+    cval   <- seq(rb[1],rb[2], length=ngrid)
     deltaC <- lapply(cval,
                      function(cv){
                          ## Huber function: sign(z)*min(abs(z), c)
-                         psiB <- ifelse( acb < cv, cBias, sign(cBias)*cv)
-                         return( sum(psiB-cBias) )
+                         psi <- sign(cBias) * pmin(acb, cv)
+                         return( sum(psi-cBias) )
                      } )
-    #estimate of conditional bias for the robust HT estimator
+    #conditional bias estimates for the robust HT estimator
     b_rht <- lapply(deltaC,
                     function(D){
                         cBias + D

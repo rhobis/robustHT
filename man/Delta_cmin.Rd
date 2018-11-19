@@ -2,16 +2,16 @@
 % Please edit documentation in R/RHTestimator.R
 \name{Delta_cmin}
 \alias{Delta_cmin}
-\title{Compute Delta(cmin) for the Robust Horvitz-Thompson estimator}
+\title{Compute Delta(cmin) quantity for the Robust Horvitz-Thompson estimator}
 \usage{
 Delta_cmin(cBias)
 }
 \arguments{
-\item{cBias}{vector of conditional bias, computed by function \code{cond_bias()}}
+\item{cBias}{vector of conditional bias, computed by function \code{conditional_bias()}}
 }
 \value{
 a scalar, representing the Delta value corresponding to the minimum c
 }
 \description{
-Compute Delta(cmin) for the Robust Horvitz-Thompson estimator
+Compute Delta(cmin) quantity for the Robust Horvitz-Thompson estimator
 }
