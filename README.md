@@ -38,7 +38,7 @@ Usage
 library(robustHT)
 
 ### Generate population data ---
-N <- 500; n <- 50
+N <- 50; n <- 5
 
 set.seed(0)
 x <- rgamma(500, scale=10, shape=5)
@@ -52,8 +52,12 @@ piks <- pik[s]
 
 
 ### Estimate conditional bias
+cb <- conditional_bias(ys, piks, sampling='poisson')
+
 
 ### Estimate the Robust Horvitz-Thompson total
+RHTestimator(ys, piks, method='find_c', sampling='poisson', grid_length=10000)
+RHTestimator(ys, piks, method='Delta_min', sampling='poisson')
 
 ```
 
