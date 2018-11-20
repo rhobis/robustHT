@@ -1,9 +1,7 @@
 robustHT
 ======================================================
 
-[![Travis-CI Build Status](https://travis-ci.org/rhobis/UPSvarApprox.svg?branch=master)](https://travis-ci.org/rhobis/UPSvarApprox)
-[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/robustHT)](https://cran.r-project.org/package=robustHT)
-[![](https://cranlogs.r-pkg.org/badges/grand-total/robustHT)](https://cran.r-project.org/package=robustHT)
+[![Travis-CI Build Status](https://travis-ci.org/rhobis/robustHT.svg?branch=master)](https://travis-ci.org/rhobis/robustHT)
 
 
 Description 
@@ -28,7 +26,7 @@ The development version of the package can be installed from GitHub:
 ``` r
 # if not present, install 'devtools' package
 install.packages("devtools")
-devtools::install_github("rhobis/UPSvarApprox")
+devtools::install_github("rhobis/robustHT")
 ```
 
 Usage
