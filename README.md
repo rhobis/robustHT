@@ -7,14 +7,13 @@ robustHT
 Description 
 -----------------
 
-UPSvarApprox provides functions for the approximation of the variance of the 
-Horvitz-Thompson total estimator in Unequal Probability Sampling
-using only first-order inclusion probabilities.
+This is a simple package for obtaining the conditional bias of the Horvitz-Thompson
+estimator and for estimating the Robust Horvitz-Thompson Estimator (Beaumont, Haziza and Ruiz-Gazen, 2013).
 
 The main functions are:
 
-- `cond_bias()`: computes or estimates the conditional bias; 
-- `RHTest()`: computes the Robust Horvitz-Thompson estimator;
+- `conditional_bias()`: computes or estimates the conditional bias; 
+- `RHTestimator()`: estimates the Robust Horvitz-Thompson total;
 
 
 
@@ -58,6 +57,11 @@ RHTestimator(ys, piks, method='find_c', sampling='poisson', grid_length=10000)
 RHTestimator(ys, piks, method='Delta_min', sampling='poisson')
 
 ```
+
+
+
+
+
 
 More
 ----
