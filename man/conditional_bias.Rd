@@ -4,8 +4,15 @@
 \alias{conditional_bias}
 \title{Compute the conditional bias}
 \usage{
-conditional_bias(y, pk = NULL, pkl = NULL, n = NULL, N = NULL,
-  sample = TRUE, sampling = c("ups", "srs", "poisson"))
+conditional_bias(
+  y,
+  pk = NULL,
+  pkl = NULL,
+  n = NULL,
+  N = NULL,
+  sample = TRUE,
+  sampling = c("ups", "srs", "poisson")
+)
 }
 \arguments{
 \item{y}{vector of observations of the variable of interest}

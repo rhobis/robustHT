@@ -2,7 +2,8 @@ robustHT
 ======================================================
 
 [![Travis-CI Build Status](https://travis-ci.org/rhobis/robustHT.svg?branch=master)](https://travis-ci.org/rhobis/robustHT)
-
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/robustHT)](https://cran.r-project.org/package=robustHT)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/robustHT)](https://cran.r-project.org/package=robustHT)
 
 Description 
 -----------------

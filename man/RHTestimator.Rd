@@ -4,9 +4,16 @@
 \alias{RHTestimator}
 \title{Robust Horvitz-Thompson estimator}
 \usage{
-RHTestimator(ys, pks = NULL, method = c("find_c", "Delta_min"),
-  sampling = c("ups", "srs", "poisson"), pkls = NULL, n = NULL,
-  N = NULL, grid_length = 4 * length(ys))
+RHTestimator(
+  ys,
+  pks = NULL,
+  method = c("find_c", "Delta_min"),
+  sampling = c("ups", "srs", "poisson"),
+  pkls = NULL,
+  n = NULL,
+  N = NULL,
+  grid_length = 4 * length(ys)
+)
 }
 \arguments{
 \item{ys}{vector of sample observations}
