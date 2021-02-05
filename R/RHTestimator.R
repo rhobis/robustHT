@@ -2,7 +2,7 @@
 
 #' Robust Horvitz-Thompson estimator
 #'
-#' Estimate the Robust Horvitz-Thompson by
+#' Estimate the robust Horvitz-Thompson by
 #' Beaumont, Haziza, Ruiz-Gazen (2013)
 #'
 #' @param ys vector of sample observations
@@ -128,22 +128,6 @@ RHTestimator <- function(ys, pks=NULL, method=c('find_c', 'Delta_min'),
 }
 
 
-### ----------------------------------------------------------------------------
-
-#' Compute Delta(cmin) quantity for the Robust Horvitz-Thompson estimator
-#'
-#'
-#' @param cBias vector of conditional bias, computed by function \code{conditional_bias()}
-#'
-#' @return a scalar, representing the Delta value corresponding to the minimum c
-#'
-#' @export
-
-Delta_cmin <- function(cBias){
-    rangeB <- range(cBias)
-    D <- -0.5 * (rangeB[1] + rangeB[2])
-    return(D)
-}
 
 
 

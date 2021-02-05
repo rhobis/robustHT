@@ -43,7 +43,7 @@ is generated to estimate the optimum value for c}
 The Robust Horvitz-Thompson estimate
 }
 \description{
-Estimate the Robust Horvitz-Thompson by
+Estimate the robust Horvitz-Thompson by
 Beaumont, Haziza, Ruiz-Gazen (2013)
 }
 \details{

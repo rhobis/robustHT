@@ -38,3 +38,23 @@ a numeric vector of conditional bias
 \description{
 Compute the bias of the Horvitz-Thompson estimator conditionally to sample units
 }
+\examples{
+# Generate population data
+N <- 50; n <- 5
+
+set.seed(0)
+x <- rgamma(500, scale=10, shape=5)
+y <- abs( 2*x + 3.7*sqrt(x) * rnorm(N) )
+
+# Select sample
+pik <- n * x/sum(x)
+s   <- sample(N, n)
+ys <- y[s]
+piks <- pik[s]
+
+# Compute conditional bias
+conditional_bias(y=ys, n=n, N=N, sample=TRUE, sampling = "srs")
+conditional_bias(y=ys, pk=piks, sampling = "poisson")
+
+
+}

@@ -12,6 +12,27 @@
 #' @return A scalar, representing the value c that minimizes the maximum Bias
 #'     of the robust HT estimator over a grid of values.
 #'
+#' @examples
+#' # Generate population data
+#' N <- 50; n <- 5
+#'
+#' set.seed(0)
+#' x <- rgamma(500, scale=10, shape=5)
+#' y <- abs( 2*x + 3.7*sqrt(x) * rnorm(N) )
+#'
+#' # Select sample
+#' pik <- n * x/sum(x)
+#' s   <- sample(N, n)
+#' ys <- y[s]
+#' piks <- pik[s]
+#'
+#' # Compute conditional bias
+#' cb <- conditional_bias(y=ys, pk=piks, sampling = "poisson")
+#'
+#' # Find the minimum c
+#' find_cmin(cb, ngrid = 200)
+#'
+#'
 #' @export
 #'
 
