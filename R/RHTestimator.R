@@ -34,18 +34,20 @@
 #'
 #'
 #' @examples
-#' ### Generate population data ---
+#' # Generate population data
 #' N <- 50; n <- 5
 #'
 #' set.seed(0)
 #' x <- rgamma(500, scale=10, shape=5)
 #' y <- abs( 2*x + 3.7*sqrt(x) * rnorm(N) )
 #'
+#' # Select sample
 #' pik <- n * x/sum(x)
 #' s   <- sample(N, n)
 #' ys <- y[s]
 #' piks <- pik[s]
 #'
+#' # Estimate the robust HT total
 #' RHTestimator(ys, piks, method='find_c', sampling='poisson')
 #' RHTestimator(ys, piks, method='Delta_min', sampling='poisson')
 #'

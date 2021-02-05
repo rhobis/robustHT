@@ -4,7 +4,7 @@ Title: Robust Estimation for the Horvitz-Thompson Total Estimator
 Version: 0.1.1
 Date: 2021-01-29
 Authors@R: person("Roberto", "Sichera", email = "rob.sichera@gmail.com", role=c("aut", "cre"))
-Description: Functions to estimate the Conditional Bias of the Horvitz-Thompson estimator and compute the Robust Horvitz-Thompson estimator (Beaumont, Haziza and Ruiz-Gazen, 2013)<doi:10.1093/biomet/ast010>.
+Description: Functions to estimate the conditional bias of the Horvitz-Thompson estimator and compute the robust Horvitz-Thompson estimator (Beaumont, Haziza and Ruiz-Gazen, 2013)<doi:10.1093/biomet/ast010>.
 Depends: R (>= 3.4.0)
 License: GPL-3
 Encoding: UTF-8
