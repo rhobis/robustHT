@@ -1,9 +1,10 @@
 robustHT
 ======================================================
 
-[![Travis-CI Build Status](https://travis-ci.org/rhobis/robustHT.svg?branch=master)](https://travis-ci.org/rhobis/robustHT)
-# [![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/robustHT)](https://cran.r-project.org/package=robustHT)
-# [![](https://cranlogs.r-pkg.org/badges/grand-total/robustHT)](https://cran.r-project.org/package=robustHT)
+[![Build Status](https://travis-ci.com/rhobis/robustHT.svg?branch=master)](https://travis-ci.com/rhobis/robustHT)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/robustHT)](https://cran.r-project.org/package=robustHT)
+[![](https://cranlogs.r-pkg.org/badges/grand-total/robustHT)](https://cran.r-project.org/package=robustHT)
+[![R badge](https://img.shields.io/badge/-Support%20me-brightgreen)](https://www.buymeacoffee.com/rhobis)
 
 Description 
 -----------------
@@ -69,3 +70,9 @@ More
 
 - Please, report any bug or issue [here](https://github.com/rhobis/robustHT/issues).
 - For more information, please contact the maintainer at `roberto.sichera@unipa.it`. 
+
+<br/>
+
+<a href="https://www.buymeacoffee.com/rhobis" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" width="217" height="60"></a>
+
+<br/>
